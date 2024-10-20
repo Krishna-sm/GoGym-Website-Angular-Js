@@ -1,0 +1,19 @@
+<c-carousel [dark]="true" [wrap]="false">
+    <c-carousel-indicators></c-carousel-indicators>
+    <c-carousel-inner>
+      <c-carousel-item *ngFor="let slide of slides; index as i;">
+        <img
+          [src]="slide.src"
+          alt="{{slide.title}}"
+          class="d-block w-100 h-[60vh] object-cover"
+          loading="lazy"
+        />
+        <c-carousel-caption class="d-none d-md-block">
+          <h3 class="!text-white">{{slide.title}}</h3>
+          <p class="!text-white">{{slide.subtitle}}</p>
+        </c-carousel-caption>
+      </c-carousel-item>
+    </c-carousel-inner>
+    <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+    <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+  </c-carousel>

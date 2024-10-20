@@ -1,0 +1,34 @@
+<header>
+    <nav class="upper   px-5 xl:px-10 flex items-center justify-end py-3">
+                <div class="flex gap-x-3 items-center">
+                    <a href="tel:+91111122233" class="flex items-center gap-x-1"> <mat-icon  class="text-teal-600" fontIcon="home"></mat-icon>
+                    <p class="text-black"> +91 111122233</p>   
+                    </a>
+                    <a a href="mailto:gym@gmail.com" class="flex items-center gap-x-1">
+                        <mat-icon  class="text-teal-600" fontIcon="email"></mat-icon>
+                    <p class="text-black"> gym&#64;gmail.com</p>   
+                        
+                           </a>
+                </div>
+    </nav>
+    <nav class="flex shadow-sm py-4 bg-indigo-500 text-white items-center  w-full justify-between px-5 xl:px-10">
+       <a matRipple  routerLink="/" class="text-xl poppins-semibold"><span class="poppins-regular-italic text-4xl">G</span>oGym  </a>
+       <button matRipple class="flex md:hidden">
+        <mat-icon   class="text-white text-2xl " fontIcon="menu"></mat-icon> 
+       </button>
+       <ul class="hidden md:flex items-center gap-x-3">
+                    <li matRipple >
+                        <a class="text-lg" routerLinkActive="active"  routerLink="/">Home</a>
+                    </li>
+                    <li matRipple >
+                        <a class="text-lg" routerLinkActive="active"  routerLink="/about">About</a>
+                    </li>
+                    <li matRipple >
+                        <a class="text-lg" routerLinkActive="active"  routerLink="/contact">Contact</a>
+                    </li>
+                    <li matRipple >
+                        <a class="text-lg" routerLinkActive="active"  routerLink="/pricing">Pricing</a>
+                    </li>
+       </ul>
+    </nav> 
+</header>
